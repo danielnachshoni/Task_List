@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="6dp"
+    app:cardCornerRadius="10dp"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginVertical="10dp"
+    >
+    <!--get some space between the notes -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#C39B4A"
+        android:padding="8dp">
+
+        <CheckBox
+            android:id="@+id/todoCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@android:color/holo_orange_dark"
+            android:fontFamily="casual"
+            android:padding="10dp"
+            android:textDirection="inherit"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:text="Write your note." />
+
+        <!--        need to do setText to urgency -->
+        <TextView
+            android:id="@+id/inTaskListUrgencyLevel"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="235dp"
+            android:layout_marginTop="40dp"
+            android:text="@string/urgency"
+            android:textColor="#800000"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/dateText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="235dp"
+            android:text="@string/DateTextView"
+            android:textAlignment="center"
+            android:textSize="10dp" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

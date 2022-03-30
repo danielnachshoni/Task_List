@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="#CCC4C4"
+    android:padding="30dp">
+
+
+    <EditText
+
+        android:id="@+id/AddTask"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:autofillHints="add your note ... "
+        android:background="#70BBD6E4"
+        android:clickable="false"
+        android:fontFamily="sans-serif-thin"
+        android:hint="@string/Add_task"
+        android:inputType="text"
+        android:selectAllOnFocus="false"
+        android:singleLine="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColorHighlight="#28FFFFFF"
+        android:textSize="20sp" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/AddTask"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="111dp"
+        android:layout_marginEnd="29dp"
+        android:background="#CCC4C4"
+        android:contentDescription="@string/save_buttun"
+        app:srcCompat="@drawable/ic_savebutten" />
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/groupUrgency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="210dp"
+        android:orientation="horizontal">
+
+
+        <RadioButton
+            android:id="@+id/rbLow"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:checked="true"
+
+            ></RadioButton>
+
+        <RadioButton
+            android:id="@+id/rbMedium"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            tools:ignore="TouchTargetSizeCheck"
+
+            ></RadioButton>
+
+        <RadioButton
+            android:id="@+id/rbHigh"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            tools:ignore="TouchTargetSizeCheck"
+
+            ></RadioButton>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/dateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="150dp"
+        android:onClick="changeDateBtn_handle"
+        android:text="choose date"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvSaveInButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="305dp"
+        android:layout_marginTop="250dp"
+        android:fontFamily="casual"
+
+        android:text="Save"
+        android:textStyle="bold"></TextView>
+
+    <TextView
+        android:id="@+id/tvAboveRadioGroup"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="190dp"
+        android:text="Urgency"
+        android:textColorHighlight="@color/black"></TextView>
+
+    <TextView
+        android:id="@+id/tvRbLow"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="250dp"
+        android:text="low"
+        android:textColor="#007D00"
+        android:textSize="10dp"></TextView>
+
+    <TextView
+        android:id="@+id/tvRbMedium"
+        android:layout_width="55dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="250dp"
+        android:text="medium"
+        android:textColor="#E17D00"
+        android:textSize="10dp"></TextView>
+    <!--    REMEMBER TO ADD THE TEXT THROUGH STRING XML!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+    <TextView
+        android:id="@+id/tvRbBarHigh"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="250dp"
+        android:text="high"
+        android:textColor="#FF0000"
+        android:textSize="10dp"
+
+        ></TextView>
+
+    <TextView
+        android:id="@+id/TextViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="@string/add_or_edit_your_task"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#E10071" />
+
+
+    <TextView
+        android:id="@+id/TextDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="160dp"
+        android:ems="10"
+        android:text="awaiting choice" />
+
+
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Task List app</string>
+    <string name="Add_task">please add your new task/note.. </string>
+    <string name="tasks">All Task List </string>
+    <string name="save_buttun">"save your note "</string>
+    <string name="edit_task">Edit Task</string>
+    <string name="textview">LEFT TO DELETE</string>>
+    <string name="add_task">Add task</string>
+    <string name="add_or_edit_your_task">Add or edit your task</string>
+    <string name="urgency">Urgency:</string>
+    <string name="DateTextView">1/1/2000</string>
+    <string name="swipeTextView">SWIPE</string>
+    <string name="right_to_edit">RIGHT TO EDIT</string>
+</resources>

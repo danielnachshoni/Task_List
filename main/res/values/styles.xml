@@ -1,0 +1,16 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">#787878</item>
+        <item name="colorAccent">#73706B</item>
+    </style>
+
+    <style name="AddStyle" parent="Theme.Design.Light.BottomSheetDialog">
+<!--        <item name="android:windowIsFloating">false</item>-->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+</resources>

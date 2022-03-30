@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--This layout base on a standard layout of task list and we add our base to it -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A8A9AA">
+
+    <TextView
+        android:id="@+id/Title_Task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="casual"
+        android:text="@string/tasks"
+        android:textColor="@color/teal_700"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/taReView"
+        android:layout_width="match_parent"
+        android:layout_height="310dp"
+        android:layout_below="@id/Title_Task"
+        android:nestedScrollingEnabled="true"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="38dp"
+        android:background="@drawable/button_selector"
+
+        app:srcCompat="@android:drawable/ic_input_add"
+
+        />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="250dp"
+        android:layout_height="32dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+
+        android:layout_marginTop="40dp"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:text="@string/textview"
+        android:textColor="#7A0013"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/SwipeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="45dp"
+        android:fontFamily="casual"
+        android:text="@string/swipeTextView"
+
+        android:textColor="#985401"
+        android:textSize="25sp"
+
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/editSwipeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="635dp"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="casual"
+        android:text="@string/right_to_edit"
+        android:textColor="#035E06"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
